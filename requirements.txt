@@ -5,3 +5,4 @@ numpy>=1.24,<3
 pyproj>=3.5,<4
 requests>=2.31,<3
 pytest>=8,<10
+python-dotenv>=1,<2

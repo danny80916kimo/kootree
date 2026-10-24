@@ -11,7 +11,10 @@ ROOT = Path(__file__).resolve().parent
 MAP_STYLE = json.loads((ROOT / 'data' / 'map-style.json').read_text(encoding='utf-8'))
 DATA_REAL = ROOT / 'data' / 'trees_clean.csv'
 DATA_DEMO = ROOT / 'data' / 'demo_trees.csv'
-if DATA_REAL.exists():
+from scripts.supabase_store import enabled as supabase_enabled, load_trees as load_supabase_trees
+if supabase_enabled():
+    trees, data_mode = load_supabase_trees()
+elif DATA_REAL.exists():
     trees = pd.read_csv(DATA_REAL, dtype={'tree_id':str}, low_memory=False)
     data_mode = '官方資料'
 else:

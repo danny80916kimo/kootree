@@ -11,6 +11,10 @@ API = SOURCE + '/api/clarifications.geojson'
 
 
 def load_snapshot(path=SNAPSHOT):
+    from scripts.supabase_store import enabled, read_dataset
+    if path == SNAPSHOT and enabled():
+        features, metadata = read_dataset('official_cases')
+        return dict(metadata, features=features)
     if not path.exists():
         return {'features': [], 'updated_at': None}
     return json.loads(path.read_text(encoding='utf-8'))

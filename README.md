@@ -1,5 +1,7 @@
 # 臺北市智慧行道樹管理平台 — MVP
 
+Supabase 匯入與讀取設定請見 [串接說明](docs/supabase-setup.md)。預設仍使用本機 CSV；填妥後端環境設定並完成資料匯入後可切換至 Supabase。
+
 以 **Dash + Plotly + Pandas + pyproj** 製作的可執行 GIS 管理後台。
 
 ## 功能
