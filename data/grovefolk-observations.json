@@ -1,0 +1,62 @@
+{
+  "schema_version": "grovefolk.observations.v1",
+  "source": "Grovefolk community observations",
+  "generated_at": 1792673124.850886,
+  "observations": [
+    {
+      "id": "3a93372956a8165fcdd4a3d5",
+      "tree_id": "NH0580191146",
+      "created": 1792669132.3897908,
+      "status": "present",
+      "season": "unknown",
+      "verification": "nearby",
+      "accuracy": 25.867051215098584,
+      "distance": 14.9,
+      "review_status": "confirmed"
+    },
+    {
+      "id": "c628fc2a2d93aab8590b6c51",
+      "tree_id": "NH0580191147",
+      "created": 1792669105.1456916,
+      "status": "present",
+      "season": "unknown",
+      "verification": "nearby",
+      "accuracy": 22.936700222695997,
+      "distance": 14.9,
+      "review_status": "pending"
+    },
+    {
+      "id": "24d04b58700200d680403fcd",
+      "tree_id": "NH0580191148",
+      "created": 1792669060.7828982,
+      "status": "present",
+      "season": "unknown",
+      "verification": "nearby",
+      "accuracy": 9.561916890653029,
+      "distance": 6.8,
+      "review_status": "pending"
+    },
+    {
+      "id": "d418efabe6ab3f94d58c4614",
+      "tree_id": "NH0580191149",
+      "created": 1792668983.6018856,
+      "status": "present",
+      "season": "unknown",
+      "verification": "nearby",
+      "accuracy": 18.03028690872534,
+      "distance": 3.6,
+      "review_status": "pending"
+    },
+    {
+      "id": "25696c7e230b54379e9af334",
+      "tree_id": "NH0580191149",
+      "created": 1792608540.5245893,
+      "status": "present",
+      "season": "unknown",
+      "verification": "unlocated",
+      "accuracy": null,
+      "distance": null,
+      "review_status": "pending"
+    }
+  ]
+}

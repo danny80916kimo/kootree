@@ -1,0 +1,12 @@
+{
+  "source": "https://treesmatch.gov.taipei/pkl/public/tree-map",
+  "api": "https://treesmatch.gov.taipei/pkl/public/tree-map/api/clarifications.geojson",
+  "retrieved_at": "2026-10-21T05:30:14.230820+08:00",
+  "source_updated_at": "2026-10-20T19:24:12+08:00",
+  "records": 76,
+  "license": {
+    "name": "政府資料開放授權條款－第1版",
+    "url": "https://data.gov.tw/license"
+  },
+  "location_note": "座標為概略位置，與實際地點可能有落差。還沒有座標的移植地點只有 label，latitude、longitude 為 null。"
+}

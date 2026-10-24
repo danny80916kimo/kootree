@@ -1,0 +1,27 @@
+/* KooTree masthead: large emblem, compact wordmark, continuous street scene. */
+:root { --header-height:184px; --header-offset:220px; }
+.masthead-c { position:sticky; top:12px; z-index:20; isolation:isolate; display:flex; align-items:center; justify-content:space-between; height:var(--header-height); margin:18px 24px; padding:8px 24px 8px 8px; overflow:hidden; background:#fcfaf3; border:1px solid #dedfce; border-radius:14px; box-shadow:0 3px 12px rgb(52 66 40 / 5%); }
+.c-brand { position:relative; z-index:1; display:flex; align-items:center; gap:12px; flex-shrink:0; padding-right:35px; background:linear-gradient(90deg,#fcfaf3 72%,#fcfaf3e6 85%,transparent); }
+.c-brand img { width:190px; height:174px; object-fit:contain; flex-shrink:0; }
+.c-brand h1 { margin:0 0 4px; color:#294e36; font-family:"Noto Serif TC","PMingLiU",serif; font-size:28px; font-weight:700; letter-spacing:.04em; line-height:1.3; }
+.c-brand-english { margin:0 0 8px; color:#294e36; font-family:Georgia,serif; font-size:25px; letter-spacing:.015em; line-height:1.15; }
+.c-brand p { margin:0; font-size:17px; color:#45603f; letter-spacing:.02em; line-height:1.5; }
+.c-scene { position:absolute; z-index:-1; inset:0; background:url("branding/kootree-masthead-v1.png") right bottom / auto 255% no-repeat; mask-image:linear-gradient(to right,transparent 18%,black 35%,black 98%,transparent); }
+.masthead-c .data-badge { position:absolute; right:18px; top:12px; margin:0; padding:5px 10px; font-size:10px; box-shadow:0 0 0 4px #fcfaf380; }
+.sidebar { top:var(--header-offset); height:calc(100vh - var(--header-offset)); }
+.layout { min-height:calc(100vh - var(--header-offset)); }
+#operations { scroll-margin-top:var(--header-offset); }
+@media(min-width:1500px) { .c-scene { background-size:auto 285%; } }
+@media(max-width:1180px) { .sidebar { position:static; height:auto; } }
+@media(max-width:760px) {
+ :root { --header-height:150px; --header-offset:174px; }
+ .masthead-c { position:relative; top:auto; margin:12px; padding:8px; border-radius:11px; }
+ .c-brand { gap:6px; padding-right:22px; background:linear-gradient(90deg,#fcfaf3 80%,transparent); }
+ .c-brand img { width:105px; height:125px; }
+ .c-brand h1 { font-size:23px; }
+ .c-brand-english { font-size:21px; margin-bottom:5px; }
+ .c-brand p { font-size:12px; letter-spacing:0; }
+ .c-scene { background-size:auto 150%; opacity:.65; mask-image:linear-gradient(to right,transparent 30%,black 65%); }
+ .masthead-c .data-badge { top:auto; bottom:8px; right:10px; font-size:9px; padding:3px 7px; box-shadow:none; }
+}
+

@@ -1,0 +1,32 @@
+{
+  "version": 8,
+  "sources": {
+    "open-street-map": {
+      "type": "raster",
+      "tiles": [
+        "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "\u00a9 <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap contributors</a>"
+    }
+  },
+  "layers": [
+    {
+      "id": "warm-paper",
+      "type": "background",
+      "paint": {
+        "background-color": "#faf6eb"
+      }
+    },
+    {
+      "id": "osm-muted",
+      "type": "raster",
+      "source": "open-street-map",
+      "paint": {
+        "raster-saturation": -0.8,
+        "raster-contrast": -0.12,
+        "raster-opacity": 0.48
+      }
+    }
+  ]
+}

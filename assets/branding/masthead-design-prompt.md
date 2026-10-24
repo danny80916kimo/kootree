@@ -1,0 +1,3 @@
+Built-in imagegen edit. Recompose the original brand poster as a panoramic masthead: ivory brand area left, complete waving person and Taiwanese lane center, banyan right; retain warm watercolor style. Exact title: 樹咱. Exact tagline: 你、我、樹，攏佇遮。 No palette swatches. Scene is bottom-aligned in the website header to retain the person and lane.
+
+V3: built-in imagegen precise edit removed ALL lettering, tagline and two-tree logo from the left ivory region, replacing with matching paper texture. Preserve woman, lane, bicycle and banyan. Website uses live brand text separately. Asset: shu-tsan-scene-text-free-v3.png.
