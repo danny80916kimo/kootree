@@ -85,7 +85,7 @@ for index, name in enumerate(trees["species"].value_counts().index):
     SPECIES_COLORS[name] = SPECIES_PALETTE[index] if index < len(SPECIES_PALETTE) else "#%02x%02x%02x" % tuple(round(c*255) for c in rgb)
 
 def dropdown(id, label, options, value='all'):
-    heading=[html.Span(label),html.Details([html.Summary('i',className='info-button',**{'aria-label':'養護觀察月份說明'}),html.Div([html.Strong('養護觀察月份如何使用'),html.Span('月份會更新當月物候關注數字；勾選月份篩選才會縮小地圖與表格範圍。全年養護觀察卡片及圖層保留全年參考。'),html.Span('專屬月份取自 Supabase 已啟用、附來源的規則；只有全年通用資料的樹種不推估月份。修剪仍須現地專業評估。')],className='info-tooltip')],className='field-info')] if id=='month_filter' else label
+    heading=[html.Span(label),html.Details([html.Summary('i',className='info-button',**{'aria-label':'養護觀察月份說明'}),html.Div([html.Strong('養護觀察月份如何使用'),html.Span('月份會更新當月物候關注數字；勾選月份篩選才會縮小地圖與表格範圍。右側養護卡片只列出所選月份的專屬參考。'),html.Span('專屬月份取自 Supabase 已啟用、附來源的規則；只有全年通用資料的樹種不推估月份。修剪仍須現地專業評估。')],className='info-tooltip')],className='field-info')] if id=='month_filter' else label
     return html.Div([html.Div(heading, className='field-label'), dcc.Dropdown(id=id,options=options,value=value,clearable=False)],className='field')
 
 def opts(series):
@@ -152,7 +152,7 @@ app.layout = html.Div([
                 ],className='map-toolbar',style={'display':'flex','alignItems':'center','flexWrap':'wrap','justifyContent':'space-between','gap':'10px'}),html.Div(id='drill_label',className='drill-label muted'),dcc.Graph(id='tree_map',config={'displayModeBar':'hover','displaylogo':False,'scrollZoom':True},style={'height':'540px'}),official_section()],className='surface map-panel'),
                 html.Section([
                     dcc.Tabs(id='map_info_tab',value='tree',children=[dcc.Tab(label='樹木資訊',value='tree'),dcc.Tab(label='移除／移植紀錄',value='official')]),
-                    html.Div([html.Div('樹木資訊',className='panel-title section-gap'),html.Div('請點選地圖標記，查看該棵樹的資料。',id='tree_details',className='tree-detail'),html.Div('全年養護觀察',className='panel-title section-gap'),html.Div(id='care_list'),html.Div('優先巡檢路段',className='panel-title section-gap'),html.Div(id='priority_roads')],id='tree_info_panel'),
+                    html.Div([html.Div('樹木資訊',className='panel-title section-gap'),html.Div('請點選地圖標記，查看該棵樹的資料。',id='tree_details',className='tree-detail'),html.Div('當月養護觀察',className='panel-title section-gap'),html.Div(id='care_list'),html.Div('優先巡檢路段',className='panel-title section-gap'),html.Div(id='priority_roads')],id='tree_info_panel'),
                     html.Div(official_reader(),id='official_info_panel',style={'display':'none'}),
                 ],className='surface details-panel')
             ],className='main-grid',id='map-workspace'),
@@ -296,36 +296,24 @@ def report_empty_figure(message, title):
     return chart
 
 
-def render_care_items(df, month, annual=False):
+def render_care_items(df, month):
     if not CARE_READY:
         return [html.P(care_load_message, className='help-text')]
     if df.empty:
         return [html.P('目前篩選範圍沒有樹木。', className='help-text')]
     names = df['species'].value_counts()
     result = [html.P('花果期及歷史月曆僅供參考，修剪須現地專業評估。', className='help-text')]
-    general_actions, general_sources = [], []
-    for name in names.index:
-        for row in month_rules(CARE_CALENDAR, name, month, specific_only=False):
-            if row['rule_type'] == 'general':
-                general_actions.append(row['action'])
-                general_sources.extend(row['source_urls'])
-    if general_actions:
-        result.append(html.Details([html.Summary('全年例行觀察'),
-            *[html.P(action, className='help-text') for action in dict.fromkeys(general_actions)],
-            *[html.A('巡查參考依據 ↗',href=url,target='_blank',rel='noopener noreferrer',className='source-link') for url in dict.fromkeys(general_sources)]]))
-    cards, pending, uncatalogued, conflicts = [], 0, 0, 0
+    cards, uncatalogued, conflicts = [], 0, 0
     for name, count in names.items():
         profile = CARE_CALENDAR.get(species_key(name))
         if not profile:
             uncatalogued += 1
             continue
-        rules = [row for row in profile['rules'] if row['enabled'] and row['rule_type']!='general'] if annual else month_rules(CARE_CALENDAR, name, month)
-        has_specific = any(row['enabled'] and row['rule_type'] != 'general' for row in profile['rules'])
-        pending += not has_specific
+        rules = month_rules(CARE_CALENDAR, name, month)
         conflicts += any(row['evidence_level'] == 'conflict' for row in profile['rules'])
         if not rules:
             continue
-        events = ' · '.join(dict.fromkeys(('、'.join(map(str,row['months']))+' 月｜' if annual else '')+row['event'] for row in rules))
+        events = f'{month} 月｜' + ' · '.join(dict.fromkeys(row['event'] for row in rules))
         actions = ' '.join(dict.fromkeys(row['action'] for row in rules))
         sources = list(dict.fromkeys(url for row in rules for url in row['source_urls']))
         cards.append(html.Div([
@@ -339,11 +327,9 @@ def render_care_items(df, month, annual=False):
     if cards:
         result.extend(cards[:6])
         if len(cards) > 6:
-            result.append(html.Details([html.Summary(f'其他 {len(cards)-6} 種養護參考'), *cards[6:]]))
+            result.append(html.Details([html.Summary(f'其他 {len(cards)-6} 種本月參考'), *cards[6:]]))
     else:
         result.append(html.P(f'{month} 月目前沒有符合篩選條件的樹種專屬月份參考；持續例行觀察。',className='help-text'))
-    if pending:
-        result.append(html.P(f'目前範圍有 {pending} 個樹種名稱僅有全年通用資料，專屬月份待確認。',className='help-text'))
     if conflicts:
         result.append(html.P(f'{conflicts} 個樹種存在月份來源差異；衝突規則未啟用。',className='help-text'))
     if uncatalogued:
@@ -421,7 +407,7 @@ def update_dashboard(district,road,species,issue,status,month,care_only,map_mode
         return build_issue_chart(issue_df,data_source=='demo') if reports_ready and not issue_df.empty else report_empty_figure(missing_report_text,'通報件數')
     def rate_fig():
         return build_rate_chart(population,issue_df) if reports_ready else report_empty_figure(missing_report_text,'件／千棵')
-    care_items=render_care_items(df, month, annual=True)
+    care_items=render_care_items(df, month)
     road_summary=open_df.groupby(['district','road']).agg(cases=('id','size'),avg_age=('case_age_days','mean')).reset_index()
     road_summary=road_summary.sort_values(['cases','avg_age'],ascending=False).head(5)
     if road_summary.empty:
