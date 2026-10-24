@@ -1,0 +1,1349 @@
+{
+  "collected_at": "2026-10-24T13:17:34.493106+08:00",
+  "references": [
+    {
+      "source_name": "九芎",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/537d727947db486b9412642bc677fe71",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~12月",
+          "months": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "光蠟樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/1c2630f7740e43949e93f57ce61ba2b3",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~7月",
+          "months": [
+            6,
+            7
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~10月",
+          "months": [
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "厚皮香",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/df4ccb3015654d8daab736607466f3b6",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "5~6月",
+          "months": [
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~10月",
+          "months": [
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "厚葉石斑木",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/f6bb352bf8bc4f7fb42b3578f806dafb",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~11月",
+          "months": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "土肉桂",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/d8fb35b56aa943298b7e279b2ecee55c",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~12月",
+          "months": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "大葉山欖",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/78ba1aac49f24f8eba93142eef4fb626",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "11~1月",
+          "months": [
+            1,
+            11,
+            12
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~8月",
+          "months": [
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "大葉楠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/85873795a7434bfa803ba0913aef2da9",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~11月",
+          "months": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "大葉羅漢松",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/e658e2cf0dbb47e0b10b183ca27da5e4",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "5~7月",
+          "months": [
+            5,
+            6,
+            7
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~9月",
+          "months": [
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "小葉羅漢松",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/129c005ff2de49619abf7aa0e3c7b5bf",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~9月",
+          "months": [
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "山櫻花",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/461cb462f46349aea4fb6b6c9de1bb5b",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "1~3月",
+          "months": [
+            1,
+            2,
+            3
+          ]
+        },
+        "fruit": {
+          "raw_period": "6~7月",
+          "months": [
+            6,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "山菜豆",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/58058d7acfe24ae9be24f39eb3e2d204",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "5~9月",
+          "months": [
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~12月",
+          "months": [
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "月橘",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/d8e855416820488ab8da3b6909262bd7",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~12月",
+          "months": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "朴樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/5a7f7791d1e64bb68a9a11eb44926284",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "1~4月",
+          "months": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~9月",
+          "months": [
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "杜英",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/7ccade3c-bd10-403d-8b40-75dda9f5dab9",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "5~8月",
+          "months": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~12月",
+          "months": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "森氏紅淡比",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/acfdfe484d6d4b148f25c99f8274736a",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "1~6月",
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "楊梅",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/43673b9cb92248fdb7c360287b2918e8",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "5~8月",
+          "months": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "楓香",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/2d3f9adf863f426d94a2fad294582e4c",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~5月",
+          "months": [
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~11月",
+          "months": [
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "榔榆",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/46c6758b5f434576b90b05c447724dfe",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "9~10月",
+          "months": [
+            9,
+            10
+          ]
+        },
+        "fruit": {
+          "raw_period": "11~1月",
+          "months": [
+            1,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "樟樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/ba6879a26e3e45ae8bdee46960f59719",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~12月",
+          "months": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "樹杞",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/b76064ba550b47adb47d021f6155674c",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "櫸",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/de28c1b7f04a41b284b83cb178e4f1fb",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~3月",
+          "months": [
+            2,
+            3
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~11月",
+          "months": [
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "欖仁樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/895d8e80b81e468ca81f1016f904a3df",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~9月",
+          "months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~10月",
+          "months": [
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "水黃皮",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/b3d077e216fb4a76888f3e7ca642bb5a",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~5月",
+          "months": [
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "江某",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/562d51d3299343a5bff8308690552cbc",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "10~12月",
+          "months": [
+            10,
+            11,
+            12
+          ]
+        },
+        "fruit": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "海桐",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/284e79cce7f647c79ba96ffdad1a787d",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~10月",
+          "months": [
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "烏心石",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/0a3ae7102cf24a86bcc4f4c06533a6a2",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "11~12月",
+          "months": [
+            11,
+            12
+          ]
+        },
+        "fruit": {
+          "raw_period": "5~7月",
+          "months": [
+            5,
+            6,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "無患子",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/f8a99837f67c44319c905a93827ce405",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~11月",
+          "months": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "牛樟",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/9ee2167d0c7c4f09adcb3528fc19e733",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~5月",
+          "months": [
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~8月",
+          "months": [
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "珊瑚樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/325cac4f0e1b4f71b6df5fcc8b45a81a",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "4~7月",
+          "months": [
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "瓊崖海棠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/c6ea882359824adbb36865b1755a05b7",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "5~6月",
+          "months": [
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~11月",
+          "months": [
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "相思樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/8f667e405ff24303b4c0c52f20216374",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "5~7月",
+          "months": [
+            5,
+            6,
+            7
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "穗花棋盤腳",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/0a2463a1ce4a4893b846da66f02e3f34",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~8月",
+          "months": [
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "竹柏",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/c33ffc117e094727be5acbf2366088d2",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~4月",
+          "months": [
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~11月",
+          "months": [
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "紅淡比",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/ff7e3575498f43d1926c2e0c166a05cf",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "1~6月",
+          "months": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺東漆",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/e75ab564d46c4f4ab69be1a06ee495b9",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~11月",
+          "months": [
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣三角楓",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/0212f8757bc84102a0189c06015216e3",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~4月",
+          "months": [
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣二葉松",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/d2b1556028f24bdbb362b3a012651af3",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~3月",
+          "months": [
+            1,
+            2,
+            3,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣五葉松",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/a49655f32f0d4b18aa1e7f0e5752a5bf",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~1月",
+          "months": [
+            1,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣欒樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/89fb5ab2a2c74085a021fc298549e69c",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "8~10月",
+          "months": [
+            8,
+            9,
+            10
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~12月",
+          "months": [
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣海桐",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/ab2040fbffb444ea92e97b1c2766e4c8",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~9月",
+          "months": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~10月",
+          "months": [
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣海棗",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/3c96d6b2b0484a7aa08e07031b58d534",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~6月",
+          "months": [
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣石楠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/fcffc8645e7e4a14b04d0de3d1ecab02",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~4月",
+          "months": [
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "12~1月",
+          "months": [
+            1,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣肖楠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/2a547e7af67f4d9c8e2e0a526ee6fbcb",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~4月",
+          "months": [
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "5~10月",
+          "months": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "臺灣赤楠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/518a811a1ac7434abdf62aa97de1ffbc",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~10月",
+          "months": [
+            9,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "蘭嶼羅漢松",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/1a9d860250df45098c79b0e0dafcf48f",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "蘭嶼肉桂",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/09f013d1829c4e69a74ff22508f278e3",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~4月",
+          "months": [
+            2,
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "象牙樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/3861c58640c34a2d876e3394755b8b6d",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~6月",
+          "months": [
+            4,
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~8月",
+          "months": [
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "賽赤楠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/63834923e34242439f9aa8dee844cffa",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "5~8月",
+          "months": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "軟毛柿",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/eb6bb9a016684a37a44b3e14fcefc23c",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "7~8月",
+          "months": [
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~2月",
+          "months": [
+            1,
+            2,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "鐵冬青",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/4dc0e5ef1b844dc9a4384e9601ba9447",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~6月",
+          "months": [
+            4,
+            5,
+            6
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~12月",
+          "months": [
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "青剛櫟",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/99569a20dc104a66bffd13353834d85c",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~4月",
+          "months": [
+            3,
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "8~2月",
+          "months": [
+            1,
+            2,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "青楓",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/d9b3af3a4cf040b2bdac1146a07f5ade",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "6~8月",
+          "months": [
+            6,
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "10~11月",
+          "months": [
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "風箱樹",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/b9990b95b47f48fda2e3b64b8b56b0cb",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "3~5月",
+          "months": [
+            3,
+            4,
+            5
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "食茱萸",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/9acb2d930d314dfea71af1ee426d8c72",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "7~8月",
+          "months": [
+            7,
+            8
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~11月",
+          "months": [
+            9,
+            10,
+            11
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "香楠",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/648d4a241e5c49d398c0c44dc8ea8e9d",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "2~3月",
+          "months": [
+            2,
+            3
+          ]
+        },
+        "fruit": {
+          "raw_period": "4~6月",
+          "months": [
+            4,
+            5,
+            6
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "魚木",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/8ccc62a5f77a4c849a11d5e2429e4816",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "8~11月",
+          "months": [
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~12月",
+          "months": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "黃槿",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/bb5215fe23c840dab82e470de9bbcc7d",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~9月",
+          "months": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "fruit": {
+          "raw_period": "7~9月",
+          "months": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    },
+    {
+      "source_name": "黃連木",
+      "source_url": "https://nativetree.forest.gov.tw/Tree/Info/2aad60f9d99d4896b1869e447ec8df79",
+      "publisher": "林業及自然保育署",
+      "periods": {
+        "flower": {
+          "raw_period": "4~4月",
+          "months": [
+            4
+          ]
+        },
+        "fruit": {
+          "raw_period": "9~10月",
+          "months": [
+            9,
+            10
+          ]
+        }
+      }
+    }
+  ],
+  "errors": []
+}

@@ -12,3 +12,7 @@ __pycache__/
 *.key
 .cloudflared/
 sites/
+
+# Downloaded evidence and local audit outputs; no credentials or caches in Git.
+data/maintenance/sources/
+reports/

@@ -1,6 +1,23 @@
 # 臺北市智慧行道樹管理平台 — MVP
 
-Supabase 匯入與讀取設定請見 [串接說明](docs/supabase-setup.md)。預設仍使用本機 CSV；填妥後端環境設定並完成資料匯入後可切換至 Supabase。
+## Supabase 即時樹籍版本（新增）
+
+本次新增 `dashboard_supabase.py`，直接唯讀查詢既有的 `tree_locations`、`tree_reports`、`dashboard_demo_reports`、`tree_species_care_profiles` 與 `tree_species_care_rules`。保留原 `app.py` 的官方移除／移植、資料中心、品牌及快照功能，兩個入口可分別啟動。
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+# 填入 SUPABASE_KEY；不要提交 .env
+python dashboard_supabase.py
+```
+
+兩個入口預設使用 8050 埠，請擇一啟動。新入口不回退至本機 CSV，不會自動生成虛構案件；真實／模擬通報可切換。樹木編號顯示 `code`，UUID 僅作內部關聯；胸徑、樹高顯示雲端來源值，未以建檔日期冒充調查日期。
+
+月份規則已提供獨立 SQL 與來源說明，見 [全樹種養護月份維護](docs/species-care-calendar.md)。養護卡片與路段卡片支援再次點擊取消篩選。介面依照 https://kootree-hanitu.nelsliu9121.workers.dev/dashboard/ 的 KooTree 品牌版本調整：插畫頁首、米白／森林綠配色、植物線條圖示、區塊導覽與地圖工具列。摘要圖採 TOP 10 加其他的樹種圓環圖、完整 12 區棵數及占比，沿用即時篩選結果。新入口樣式隔離於 `supabase_assets/`，不覆蓋原站樣式。
+
+本機環境實測 93,045 筆行道樹及 200 筆獨立模擬通報；實際數量以各部署的 Supabase 專案與讀取權限為準。
+
+原 app.py 的 Supabase 匯入與讀取設定請見 [串接說明](docs/supabase-setup.md)。預設仍使用本機 CSV；填妥後端環境設定並完成資料匯入後可切換至 Supabase。
 
 以 **Dash + Plotly + Pandas + pyproj** 製作的可執行 GIS 管理後台。
 

@@ -1,0 +1,6 @@
+.map-toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; }
+.map-layer-options { display:flex; flex-wrap:wrap; gap:3px; }
+.map-layer-options input { margin-right:5px; }
+.summary-chart-panel .dash-graph { height:520px; min-width:480px; }
+#summary-charts { scroll-margin-top:var(--header-offset); }
+@media(max-width:760px) { .summary-chart-panel .dash-graph { min-width:360px; } }

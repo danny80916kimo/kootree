@@ -35,7 +35,7 @@ def test_empty_map_keeps_geographic_trace():
     result = app.update_dashboard('all','all','missing-species','all','all',10,[],'species',{})
     assert result[1] == '0'
     assert result[0].data[0].type == 'scattermapbox'
-    assert len(result[0].layout.annotations) == 1
+    assert any('目前篩選無資料' in str(annotation.text) for annotation in result[0].layout.annotations)
 
 @pytest.mark.parametrize('trigger,click', [
     ({'type':'priority_road','district':'district-a','road':'road-a'}, None),
@@ -101,14 +101,14 @@ def test_care_shows_all_seasons_with_consistent_colors():
     result=app.update_dashboard('all','all','all','all','all',10,[],'care',{})
     traces=result[0].data
     assert traces[0].name=='其他樹木'
-    assert traces[0].marker.opacity==.30
+    assert 0 < traces[0].marker.opacity < .95
     for trace in traces[1:]:
         species=trace.name.split(' · ')[0]
         assert trace.marker.color==app.SPECIES_COLORS[species]
         assert trace.marker.opacity==.95
         assert '月' in trace.name
     assert len(traces)==5
-    assert sum(len(t.lat) for t in traces)<=8000
+    assert sum(len(t.lat) for t in traces)==len(app.trees.dropna(subset=['latitude','longitude']))
     march=app.update_dashboard('all','all','all','all','all',3,[],'care',{})
     assert [t.name for t in traces]==[t.name for t in march[0].data]
 

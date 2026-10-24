@@ -1,0 +1,1309 @@
+{
+  "collected_at": "2026-10-24T13:16:03.208270+08:00",
+  "species": {
+    "楓香": {
+      "street": 7724,
+      "protected": 198
+    },
+    "山黃麻": {
+      "street": 30,
+      "protected": 2
+    },
+    "木棉": {
+      "street": 1840,
+      "protected": 4
+    },
+    "鐵刀木": {
+      "street": 342,
+      "protected": 1
+    },
+    "榕": {
+      "street": 0,
+      "protected": 1531
+    },
+    "紫薇": {
+      "street": 1050,
+      "protected": 0
+    },
+    "光蠟樹": {
+      "street": 1819,
+      "protected": 0
+    },
+    "臺灣欒樹": {
+      "street": 6687,
+      "protected": 2
+    },
+    "黑板樹": {
+      "street": 4197,
+      "protected": 132
+    },
+    "茄苳": {
+      "street": 10236,
+      "protected": 90
+    },
+    "肯氏蒲桃": {
+      "street": 290,
+      "protected": 5
+    },
+    "流蘇": {
+      "street": 217,
+      "protected": 2
+    },
+    "白千層": {
+      "street": 4596,
+      "protected": 194
+    },
+    "火焰木": {
+      "street": 310,
+      "protected": 0
+    },
+    "榕樹": {
+      "street": 11006,
+      "protected": 0
+    },
+    "蘭嶼烏心石": {
+      "street": 154,
+      "protected": 0
+    },
+    "樟樹": {
+      "street": 8561,
+      "protected": 0
+    },
+    "大花紫薇": {
+      "street": 2321,
+      "protected": 0
+    },
+    "九芎": {
+      "street": 682,
+      "protected": 3
+    },
+    "印度紫檀": {
+      "street": 442,
+      "protected": 12
+    },
+    "苦楝": {
+      "street": 1813,
+      "protected": 15
+    },
+    "黃椰子": {
+      "street": 292,
+      "protected": 9
+    },
+    "小葉欖仁": {
+      "street": 2828,
+      "protected": 13
+    },
+    "蓮霧": {
+      "street": 94,
+      "protected": 3
+    },
+    "水黃皮": {
+      "street": 2133,
+      "protected": 4
+    },
+    "芒果": {
+      "street": 652,
+      "protected": 48
+    },
+    "刺桐": {
+      "street": 140,
+      "protected": 22
+    },
+    "菩提樹": {
+      "street": 1414,
+      "protected": 13
+    },
+    "亞力山大椰子": {
+      "street": 51,
+      "protected": 199
+    },
+    "羅漢松": {
+      "street": 396,
+      "protected": 0
+    },
+    "大葉桃花心木": {
+      "street": 95,
+      "protected": 4
+    },
+    "桃花心木": {
+      "street": 228,
+      "protected": 2
+    },
+    "蒲葵": {
+      "street": 755,
+      "protected": 61
+    },
+    "白玉蘭": {
+      "street": 96,
+      "protected": 19
+    },
+    "盾柱木": {
+      "street": 1057,
+      "protected": 0
+    },
+    "烏桕": {
+      "street": 884,
+      "protected": 8
+    },
+    "山櫻花": {
+      "street": 1377,
+      "protected": 0
+    },
+    "羅比親王海棗": {
+      "street": 346,
+      "protected": 0
+    },
+    "島榕": {
+      "street": 16,
+      "protected": 0
+    },
+    "青楓": {
+      "street": 281,
+      "protected": 1
+    },
+    "臺灣海棗": {
+      "street": 58,
+      "protected": 20
+    },
+    "垂榕": {
+      "street": 489,
+      "protected": 0
+    },
+    "蠟腸樹": {
+      "street": 78,
+      "protected": 0
+    },
+    "美人樹": {
+      "street": 365,
+      "protected": 3
+    },
+    "洋紅風鈴木": {
+      "street": 384,
+      "protected": 0
+    },
+    "構樹": {
+      "street": 197,
+      "protected": 0
+    },
+    "九丁榕": {
+      "street": 4,
+      "protected": 3
+    },
+    "蛋黃果": {
+      "street": 17,
+      "protected": 0
+    },
+    "黃脈刺桐": {
+      "street": 373,
+      "protected": 0
+    },
+    "黃連木": {
+      "street": 456,
+      "protected": 0
+    },
+    "櫸": {
+      "street": 637,
+      "protected": 0
+    },
+    "榔榆": {
+      "street": 692,
+      "protected": 0
+    },
+    "楊梅": {
+      "street": 26,
+      "protected": 0
+    },
+    "鳳凰木": {
+      "street": 236,
+      "protected": 12
+    },
+    "阿勃勒": {
+      "street": 847,
+      "protected": 0
+    },
+    "杜英": {
+      "street": 299,
+      "protected": 10
+    },
+    "森氏紅淡比": {
+      "street": 30,
+      "protected": 9
+    },
+    "大王椰子": {
+      "street": 1847,
+      "protected": 182
+    },
+    "血桐": {
+      "street": 214,
+      "protected": 0
+    },
+    "海棗": {
+      "street": 28,
+      "protected": 0
+    },
+    "雀榕": {
+      "street": 135,
+      "protected": 64
+    },
+    "木麻黃": {
+      "street": 73,
+      "protected": 5
+    },
+    "洋玉蘭": {
+      "street": 62,
+      "protected": 0
+    },
+    "桑樹": {
+      "street": 105,
+      "protected": 0
+    },
+    "馬拉巴栗": {
+      "street": 185,
+      "protected": 0
+    },
+    "烏心石": {
+      "street": 181,
+      "protected": 4
+    },
+    "風鈴木": {
+      "street": 298,
+      "protected": 0
+    },
+    "無患子": {
+      "street": 184,
+      "protected": 4
+    },
+    "印度橡膠樹": {
+      "street": 313,
+      "protected": 71
+    },
+    "叢立孔雀椰子": {
+      "street": 2,
+      "protected": 0
+    },
+    "豔紫荊": {
+      "street": 286,
+      "protected": 0
+    },
+    "黃玉蘭": {
+      "street": 8,
+      "protected": 0
+    },
+    "紅花鐵刀木": {
+      "street": 56,
+      "protected": 0
+    },
+    "大葉桉": {
+      "street": 114,
+      "protected": 17
+    },
+    "水柳": {
+      "street": 224,
+      "protected": 0
+    },
+    "福木": {
+      "street": 471,
+      "protected": 0
+    },
+    "銀合歡": {
+      "street": 29,
+      "protected": 0
+    },
+    "富士櫻": {
+      "street": 353,
+      "protected": 0
+    },
+    "肯氏南洋杉": {
+      "street": 30,
+      "protected": 46
+    },
+    "猢猻木": {
+      "street": 224,
+      "protected": 72
+    },
+    "黃金風鈴木": {
+      "street": 160,
+      "protected": 0
+    },
+    "欖仁樹": {
+      "street": 331,
+      "protected": 0
+    },
+    "第倫桃": {
+      "street": 70,
+      "protected": 3
+    },
+    "龍眼": {
+      "street": 130,
+      "protected": 2
+    },
+    "黃金榕": {
+      "street": 17,
+      "protected": 0
+    },
+    "玉蘭": {
+      "street": 8,
+      "protected": 0
+    },
+    "青剛櫟": {
+      "street": 101,
+      "protected": 15
+    },
+    "菲律賓饅頭果": {
+      "street": 7,
+      "protected": 0
+    },
+    "樟": {
+      "street": 0,
+      "protected": 241
+    },
+    "石栗": {
+      "street": 16,
+      "protected": 0
+    },
+    "大葉山欖": {
+      "street": 228,
+      "protected": 8
+    },
+    "落羽杉": {
+      "street": 202,
+      "protected": 4
+    },
+    "桂花": {
+      "street": 27,
+      "protected": 8
+    },
+    "壯幹棕櫚": {
+      "street": 7,
+      "protected": 54
+    },
+    "海南菜豆樹": {
+      "street": 12,
+      "protected": 0
+    },
+    "楊桃": {
+      "street": 40,
+      "protected": 0
+    },
+    "竹柏": {
+      "street": 44,
+      "protected": 8
+    },
+    "臺灣肖楠": {
+      "street": 12,
+      "protected": 2
+    },
+    "大葉雀榕": {
+      "street": 8,
+      "protected": 51
+    },
+    "琴葉榕": {
+      "street": 22,
+      "protected": 0
+    },
+    "鵝掌柴": {
+      "street": 21,
+      "protected": 0
+    },
+    "臺灣朴": {
+      "street": 0,
+      "protected": 8
+    },
+    "龍柏": {
+      "street": 206,
+      "protected": 1
+    },
+    "花旗木": {
+      "street": 4,
+      "protected": 0
+    },
+    "臺灣櫸": {
+      "street": 44,
+      "protected": 0
+    },
+    "蘭嶼羅漢松": {
+      "street": 422,
+      "protected": 0
+    },
+    "披針葉饅頭果": {
+      "street": 1,
+      "protected": 1
+    },
+    "朴樹": {
+      "street": 83,
+      "protected": 21
+    },
+    "陰香": {
+      "street": 112,
+      "protected": 0
+    },
+    "鐵冬青": {
+      "street": 225,
+      "protected": 1
+    },
+    "含笑花": {
+      "street": 7,
+      "protected": 0
+    },
+    "羊蹄甲": {
+      "street": 78,
+      "protected": 0
+    },
+    "錫蘭橄欖": {
+      "street": 94,
+      "protected": 8
+    },
+    "小葉南洋杉": {
+      "street": 70,
+      "protected": 71
+    },
+    "槭葉翅子木": {
+      "street": 33,
+      "protected": 0
+    },
+    "麵包樹": {
+      "street": 38,
+      "protected": 21
+    },
+    "山埔姜": {
+      "street": 2,
+      "protected": 1
+    },
+    "黑松": {
+      "street": 54,
+      "protected": 0
+    },
+    "欖仁": {
+      "street": 4,
+      "protected": 1
+    },
+    "夾竹桃": {
+      "street": 12,
+      "protected": 0
+    },
+    "山油麻": {
+      "street": 2,
+      "protected": 0
+    },
+    "華盛頓椰子": {
+      "street": 44,
+      "protected": 0
+    },
+    "稜果榕": {
+      "street": 42,
+      "protected": 0
+    },
+    "蘇鐵": {
+      "street": 3,
+      "protected": 0
+    },
+    "檸檬": {
+      "street": 10,
+      "protected": 0
+    },
+    "香楠": {
+      "street": 26,
+      "protected": 24
+    },
+    "穗花棋盤腳": {
+      "street": 20,
+      "protected": 2
+    },
+    "大葉楠": {
+      "street": 81,
+      "protected": 6
+    },
+    "凍子椰子": {
+      "street": 15,
+      "protected": 0
+    },
+    "荔枝": {
+      "street": 33,
+      "protected": 0
+    },
+    "肖楠": {
+      "street": 8,
+      "protected": 0
+    },
+    "柚子": {
+      "street": 63,
+      "protected": 0
+    },
+    "梅": {
+      "street": 91,
+      "protected": 1
+    },
+    "垂葉榕": {
+      "street": 0,
+      "protected": 9
+    },
+    "側柏": {
+      "street": 29,
+      "protected": 0
+    },
+    "落羽松": {
+      "street": 27,
+      "protected": 0
+    },
+    "土肉桂": {
+      "street": 67,
+      "protected": 0
+    },
+    "緬梔花": {
+      "street": 67,
+      "protected": 0
+    },
+    "厚皮香": {
+      "street": 23,
+      "protected": 1
+    },
+    "海桐": {
+      "street": 81,
+      "protected": 0
+    },
+    "臺灣石楠": {
+      "street": 8,
+      "protected": 0
+    },
+    "檸檬桉": {
+      "street": 8,
+      "protected": 4
+    },
+    "臺灣油杉": {
+      "street": 6,
+      "protected": 10
+    },
+    "洋紫荊": {
+      "street": 59,
+      "protected": 0
+    },
+    "黃槐": {
+      "street": 6,
+      "protected": 0
+    },
+    "野梨": {
+      "street": 12,
+      "protected": 0
+    },
+    "李": {
+      "street": 9,
+      "protected": 0
+    },
+    "緬梔": {
+      "street": 76,
+      "protected": 0
+    },
+    "櫻花": {
+      "street": 48,
+      "protected": 0
+    },
+    "石朴": {
+      "street": 24,
+      "protected": 0
+    },
+    "柑橘": {
+      "street": 15,
+      "protected": 0
+    },
+    "蒲桃": {
+      "street": 18,
+      "protected": 1
+    },
+    "扁柏": {
+      "street": 31,
+      "protected": 0
+    },
+    "波羅蜜": {
+      "street": 15,
+      "protected": 0
+    },
+    "象牙柿": {
+      "street": 10,
+      "protected": 0
+    },
+    "大葉合歡": {
+      "street": 4,
+      "protected": 5
+    },
+    "溼地松": {
+      "street": 68,
+      "protected": 0
+    },
+    "臺灣三角楓": {
+      "street": 27,
+      "protected": 0
+    },
+    "龍眼樹": {
+      "street": 12,
+      "protected": 0
+    },
+    "月橘": {
+      "street": 5,
+      "protected": 0
+    },
+    "加羅林魚木": {
+      "street": 6,
+      "protected": 1
+    },
+    "魚木": {
+      "street": 2,
+      "protected": 0
+    },
+    "印度黃檀": {
+      "street": 22,
+      "protected": 6
+    },
+    "南美假櫻桃": {
+      "street": 10,
+      "protected": 0
+    },
+    "紅楠": {
+      "street": 22,
+      "protected": 5
+    },
+    "黃蝴蝶": {
+      "street": 1,
+      "protected": 0
+    },
+    "臺東漆樹": {
+      "street": 0,
+      "protected": 2
+    },
+    "馬尼拉椰子": {
+      "street": 13,
+      "protected": 0
+    },
+    "雞冠刺桐": {
+      "street": 10,
+      "protected": 0
+    },
+    "厚葉石斑木": {
+      "street": 12,
+      "protected": 0
+    },
+    "千年桐": {
+      "street": 7,
+      "protected": 0
+    },
+    "番龍眼": {
+      "street": 1,
+      "protected": 0
+    },
+    "賽赤楠": {
+      "street": 1,
+      "protected": 0
+    },
+    "檬果": {
+      "street": 8,
+      "protected": 0
+    },
+    "黃鐘花": {
+      "street": 3,
+      "protected": 0
+    },
+    "柿子": {
+      "street": 9,
+      "protected": 1
+    },
+    "香龍血樹": {
+      "street": 11,
+      "protected": 0
+    },
+    "錫蘭饅頭果": {
+      "street": 7,
+      "protected": 0
+    },
+    "酒瓶椰子": {
+      "street": 35,
+      "protected": 0
+    },
+    "臺灣赤楠": {
+      "street": 42,
+      "protected": 0
+    },
+    "酪梨": {
+      "street": 45,
+      "protected": 0
+    },
+    "臭娘子": {
+      "street": 3,
+      "protected": 1
+    },
+    "紅瓶刷子樹": {
+      "street": 5,
+      "protected": 0
+    },
+    "臺灣泡桐": {
+      "street": 1,
+      "protected": 0
+    },
+    "檳榔": {
+      "street": 38,
+      "protected": 0
+    },
+    "毛風鈴木": {
+      "street": 10,
+      "protected": 0
+    },
+    "掌葉蘋婆": {
+      "street": 37,
+      "protected": 2
+    },
+    "蘭嶼肉桂": {
+      "street": 2,
+      "protected": 0
+    },
+    "樹杞": {
+      "street": 5,
+      "protected": 5
+    },
+    "臺灣海桐": {
+      "street": 39,
+      "protected": 3
+    },
+    "木瓜": {
+      "street": 11,
+      "protected": 0
+    },
+    "瓊崖海棠": {
+      "street": 12,
+      "protected": 0
+    },
+    "南洋含笑": {
+      "street": 4,
+      "protected": 1
+    },
+    "海檬果": {
+      "street": 17,
+      "protected": 3
+    },
+    "銀杏": {
+      "street": 1,
+      "protected": 6
+    },
+    "日日櫻": {
+      "street": 5,
+      "protected": 0
+    },
+    "香椿": {
+      "street": 7,
+      "protected": 3
+    },
+    "朱槿": {
+      "street": 3,
+      "protected": 0
+    },
+    "紅淡比": {
+      "street": 5,
+      "protected": 1
+    },
+    "吉貝木棉": {
+      "street": 0,
+      "protected": 2
+    },
+    "相思樹": {
+      "street": 11,
+      "protected": 6
+    },
+    "吉野櫻": {
+      "street": 22,
+      "protected": 0
+    },
+    "棍棒椰子": {
+      "street": 25,
+      "protected": 0
+    },
+    "泡桐(南投梧桐)": {
+      "street": 0,
+      "protected": 1
+    },
+    "山陀兒": {
+      "street": 5,
+      "protected": 0
+    },
+    "金桔": {
+      "street": 5,
+      "protected": 0
+    },
+    "辣木": {
+      "street": 4,
+      "protected": 0
+    },
+    "樹蘭": {
+      "street": 8,
+      "protected": 0
+    },
+    "番石榴": {
+      "street": 34,
+      "protected": 1
+    },
+    "火漆木": {
+      "street": 2,
+      "protected": 0
+    },
+    "藍花楹": {
+      "street": 17,
+      "protected": 0
+    },
+    "風箱樹": {
+      "street": 2,
+      "protected": 1
+    },
+    "亞里垂榕": {
+      "street": 1,
+      "protected": 0
+    },
+    "臺灣五葉松": {
+      "street": 5,
+      "protected": 0
+    },
+    "枇杷": {
+      "street": 13,
+      "protected": 0
+    },
+    "銀樺": {
+      "street": 11,
+      "protected": 1
+    },
+    "破布子": {
+      "street": 8,
+      "protected": 0
+    },
+    "草莓番石榴": {
+      "street": 3,
+      "protected": 0
+    },
+    "千頭木麻黃": {
+      "street": 6,
+      "protected": 0
+    },
+    "夜合花": {
+      "street": 1,
+      "protected": 0
+    },
+    "大葉羅漢松": {
+      "street": 0,
+      "protected": 4
+    },
+    "日本黑松": {
+      "street": 0,
+      "protected": 12
+    },
+    "咖啡樹": {
+      "street": 2,
+      "protected": 0
+    },
+    "大花曼陀羅": {
+      "street": 1,
+      "protected": 0
+    },
+    "江某": {
+      "street": 0,
+      "protected": 4
+    },
+    "月橘 (七里香)": {
+      "street": 0,
+      "protected": 5
+    },
+    "菲律賓紫檀": {
+      "street": 1,
+      "protected": 4
+    },
+    "軟毛柿": {
+      "street": 1,
+      "protected": 0
+    },
+    "紫藤": {
+      "street": 0,
+      "protected": 3
+    },
+    "臺灣二葉松": {
+      "street": 2,
+      "protected": 0
+    },
+    "黃褥花": {
+      "street": 15,
+      "protected": 0
+    },
+    "金龜樹": {
+      "street": 1,
+      "protected": 4
+    },
+    "細葉桉": {
+      "street": 0,
+      "protected": 1
+    },
+    "南洋含笑花": {
+      "street": 1,
+      "protected": 0
+    },
+    "香水樹": {
+      "street": 4,
+      "protected": 0
+    },
+    "小梗木薑子": {
+      "street": 1,
+      "protected": 0
+    },
+    "孔雀椰子": {
+      "street": 2,
+      "protected": 0
+    },
+    "黃花風鈴木": {
+      "street": 4,
+      "protected": 0
+    },
+    "沉香": {
+      "street": 2,
+      "protected": 0
+    },
+    "垂柳": {
+      "street": 2,
+      "protected": 0
+    },
+    "小葉桑": {
+      "street": 3,
+      "protected": 0
+    },
+    "春不老": {
+      "street": 6,
+      "protected": 0
+    },
+    "紅邊竹蕉": {
+      "street": 3,
+      "protected": 0
+    },
+    "黃皮": {
+      "street": 2,
+      "protected": 0
+    },
+    "食茱萸": {
+      "street": 2,
+      "protected": 0
+    },
+    "白桕": {
+      "street": 1,
+      "protected": 1
+    },
+    "橡皮樹": {
+      "street": 2,
+      "protected": 0
+    },
+    "九重葛": {
+      "street": 3,
+      "protected": 0
+    },
+    "黃果垂榕": {
+      "street": 1,
+      "protected": 2
+    },
+    "槭葉酒瓶樹": {
+      "street": 7,
+      "protected": 0
+    },
+    "可可椰子": {
+      "street": 15,
+      "protected": 0
+    },
+    "臺東漆": {
+      "street": 1,
+      "protected": 0
+    },
+    "釋迦": {
+      "street": 5,
+      "protected": 0
+    },
+    "河津櫻": {
+      "street": 8,
+      "protected": 0
+    },
+    "桃": {
+      "street": 5,
+      "protected": 0
+    },
+    "棋盤腳": {
+      "street": 1,
+      "protected": 0
+    },
+    "雞爪楓": {
+      "street": 7,
+      "protected": 0
+    },
+    "珊瑚樹": {
+      "street": 3,
+      "protected": 0
+    },
+    "爪哇旃那": {
+      "street": 2,
+      "protected": 0
+    },
+    "臺灣雅楠": {
+      "street": 0,
+      "protected": 1
+    },
+    "扁桃葉斑鳩菊": {
+      "street": 5,
+      "protected": 0
+    },
+    "山菜豆": {
+      "street": 2,
+      "protected": 0
+    },
+    "旅人蕉": {
+      "street": 1,
+      "protected": 0
+    },
+    "女王椰子": {
+      "street": 0,
+      "protected": 1
+    },
+    "大風子": {
+      "street": 0,
+      "protected": 1
+    },
+    "澀葉榕": {
+      "street": 4,
+      "protected": 0
+    },
+    "小實孔雀豆": {
+      "street": 1,
+      "protected": 0
+    },
+    "垂花琴木": {
+      "street": 1,
+      "protected": 0
+    },
+    "土樟": {
+      "street": 1,
+      "protected": 0
+    },
+    "毛海棗": {
+      "street": 0,
+      "protected": 4
+    },
+    "象耳榕": {
+      "street": 3,
+      "protected": 0
+    },
+    "黃槿": {
+      "street": 2,
+      "protected": 3
+    },
+    "亞歷山大椰子": {
+      "street": 1,
+      "protected": 0
+    },
+    "象牙樹": {
+      "street": 0,
+      "protected": 4
+    },
+    "印度榆": {
+      "street": 0,
+      "protected": 1
+    },
+    "孟加拉榕": {
+      "street": 0,
+      "protected": 2
+    },
+    "優曇華": {
+      "street": 0,
+      "protected": 1
+    },
+    "白匏子": {
+      "street": 1,
+      "protected": 0
+    },
+    "澳洲鴨腳木": {
+      "street": 8,
+      "protected": 0
+    },
+    "栗豆樹": {
+      "street": 1,
+      "protected": 0
+    },
+    "琉球松": {
+      "street": 0,
+      "protected": 3
+    },
+    "杏": {
+      "street": 2,
+      "protected": 0
+    },
+    "柳橙": {
+      "street": 4,
+      "protected": 0
+    },
+    "牛樟": {
+      "street": 1,
+      "protected": 1
+    },
+    "黃果蒲桃": {
+      "street": 0,
+      "protected": 1
+    },
+    "密花白飯樹": {
+      "street": 1,
+      "protected": 0
+    },
+    "八重櫻": {
+      "street": 1,
+      "protected": 0
+    },
+    "樹葡萄": {
+      "street": 1,
+      "protected": 0
+    },
+    "油桐": {
+      "street": 1,
+      "protected": 0
+    },
+    "緬梔 (雞蛋花)": {
+      "street": 0,
+      "protected": 2
+    },
+    "金剛纂": {
+      "street": 2,
+      "protected": 0
+    },
+    "臺東蘇鐵": {
+      "street": 0,
+      "protected": 5
+    },
+    "金露花": {
+      "street": 1,
+      "protected": 0
+    },
+    "芭樂": {
+      "street": 1,
+      "protected": 0
+    },
+    "銀葉樹": {
+      "street": 1,
+      "protected": 0
+    },
+    "光臘樹": {
+      "street": 0,
+      "protected": 2
+    },
+    "圓柏": {
+      "street": 1,
+      "protected": 0
+    },
+    "闊葉榕": {
+      "street": 0,
+      "protected": 2
+    },
+    "裡白楤木": {
+      "street": 1,
+      "protected": 0
+    },
+    "山紅柿": {
+      "street": 0,
+      "protected": 1
+    },
+    "魯花樹": {
+      "street": 0,
+      "protected": 3
+    },
+    "狹葉堇寶蓮": {
+      "street": 0,
+      "protected": 1
+    },
+    "使君子": {
+      "street": 1,
+      "protected": 0
+    },
+    "大葉巴克豆": {
+      "street": 0,
+      "protected": 1
+    },
+    "密梭倫榕": {
+      "street": 0,
+      "protected": 1
+    },
+    "黃葛樹": {
+      "street": 0,
+      "protected": 1
+    },
+    "台灣五葉松": {
+      "street": 0,
+      "protected": 1
+    },
+    "水同木": {
+      "street": 2,
+      "protected": 0
+    },
+    "枯木": {
+      "street": 4,
+      "protected": 0
+    },
+    "變葉木": {
+      "street": 0,
+      "protected": 1
+    },
+    "橄欖": {
+      "street": 2,
+      "protected": 0
+    },
+    "麻楝": {
+      "street": 1,
+      "protected": 0
+    },
+    "日本山茶": {
+      "street": 1,
+      "protected": 0
+    },
+    "柳杉": {
+      "street": 0,
+      "protected": 1
+    },
+    "木槿": {
+      "street": 1,
+      "protected": 0
+    },
+    "南洋馬蹄花": {
+      "street": 1,
+      "protected": 0
+    },
+    "山豬肉": {
+      "street": 0,
+      "protected": 1
+    },
+    "木芙蓉": {
+      "street": 1,
+      "protected": 0
+    },
+    "煙火樹": {
+      "street": 2,
+      "protected": 0
+    },
+    "麻六甲合歡": {
+      "street": 0,
+      "protected": 1
+    },
+    "白木香": {
+      "street": 1,
+      "protected": 0
+    },
+    "粗皮桉": {
+      "street": 0,
+      "protected": 1
+    },
+    "圓果榕": {
+      "street": 0,
+      "protected": 1
+    },
+    "豆梨": {
+      "street": 1,
+      "protected": 0
+    },
+    "小葉羅漢松": {
+      "street": 0,
+      "protected": 1
+    },
+    "烏來冬青": {
+      "street": 0,
+      "protected": 1
+    }
+  }
+}
