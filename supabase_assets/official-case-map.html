@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/assets/vendor/leaflet.css"><link rel="stylesheet" href="/assets/vendor/MarkerCluster.css">
+<style>
+html,body,#map{height:100%;margin:0;background:#f2efe6;font-family:Arial,sans-serif}
+.tree-pin{background:none;border:0;filter:drop-shadow(0 1px 2px #294e3655)}
+.tree-pin svg{display:block;width:42px;height:48px}
+.tree-pin span{position:absolute;bottom:0;left:20px;min-width:19px;height:19px;border-radius:12px;text-align:center;background:#fffdf7;color:#355b3e;border:2px solid #839d68;font-size:12px;font-weight:bold;line-height:19px}
+.legend{background:#fffdf7ed;padding:10px 12px;border:1px solid #dedfce;border-radius:9px;color:#45603f;font-size:12px;line-height:1.8;max-width:220px}
+.leaflet-popup-content{max-width:270px;line-height:1.8;color:#294e36}
+.leaflet-popup-content button{background:#294e36;color:#fffdf7;border:0;border-radius:6px;padding:6px 10px;cursor:pointer}
+.leaflet-control-attribution{font-size:10px}
+.leaflet-tile-pane{filter:saturate(.35) contrast(.92);}
+</style></head><body><div id="map" aria-label="官方公開說明與移植目的地地圖"></div>
+<script src="/assets/vendor/leaflet.js"></script><script src="/assets/vendor/leaflet.markercluster.js"></script>
+<script>
+const map=L.map('map').setView([25.074,121.55],11);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19
+}).addTo(map);
+const svg=color=>`<svg viewBox="0 0 42 48" xmlns="http://www.w3.org/2000/svg"><path d="M19 23h6v19h-6z" fill="#8a7450" stroke="#fffdf7" stroke-width="3"/><path d="M21 4C13 3 9 8 9 13C1 17 4 29 13 30H29C39 28 40 18 33 13C33 7 27 3 21 4Z" fill="${color}" stroke="#fffdf7" stroke-width="2.5"/></svg>`;
+const icon=(color,count)=>L.divIcon({className:'tree-pin',html:svg(color)+(count?`<span>${count}</span>`:''),iconSize:[42,48],iconAnchor:[21,43],popupAnchor:[0,-35]});
+const clusters=L.markerClusterGroup({maxClusterRadius:45,spiderfyOnMaxZoom:true,showCoverageOnHover:false,iconCreateFunction:c=>icon('#547e3d',c.getChildCount())});
+const destinations=L.layerGroup(), routes=L.layerGroup();
+const legend=L.control({position:'bottomleft'});
+legend.onAdd=()=>{const el=L.DomUtil.create('div','legend');el.textContent='綠樹：官方說明｜數字：說明筆數（非株數）\n陶土色：移植目的地｜虛線：位置連線，非實際路線';el.style.whiteSpace='pre-line';return el};legend.addTo(map);
+L.control.layers(null,{'官方說明（群聚）':clusters,'移植目的地':destinations,'移植關係連線':routes},{collapsed:false}).addTo(map);
+clusters.addTo(map);destinations.addTo(map);routes.addTo(map);
+function text(tag,value){const el=document.createElement(tag);el.textContent=value;return el}
+function popup(record){const el=document.createElement('div');el.append(text('strong',record.title),text('p',record.location+'｜'+record.published_at));const btn=text('button','閱讀官方說明');btn.onclick=()=>window.parent.postMessage({type:'shu-tsan-case',id:record.id},window.location.origin);el.append(btn);return el}
+const markersById = {};
+window.addEventListener('message', event=>{
+ if(event.origin!==location.origin || event.source!==parent || !event.data || event.data.type!=='shu-tsan-focus')return;
+ const marker=markersById[event.data.id];
+ if(marker)clusters.zoomToShowLayer(marker,()=>marker.openPopup());
+});
+const params=new URLSearchParams(location.search);
+fetch('/official-tree-cases.json?'+params.toString()).then(r=>{if(!r.ok)throw Error('load');return r.json()}).then(data=>{
+ const bounds=[];let plotted=0;
+ data.records.forEach(r=>{
+  const origin=Number.isFinite(r.latitude)&&Number.isFinite(r.longitude)?[r.latitude,r.longitude]:null;
+  if(origin){const marker=L.marker(origin,{icon:icon('#547e3d')}).bindPopup(popup(r));marker.on('click',()=>window.parent.postMessage({type:'shu-tsan-case',id:r.id},window.location.origin));clusters.addLayer(marker);markersById[r.id]=marker;bounds.push(origin);plotted++}
+  r.destinations.forEach(d=>{
+   if(!Number.isFinite(d.latitude)||!Number.isFinite(d.longitude))return;
+   const target=[d.latitude,d.longitude];const marker=L.marker(target,{icon:icon('#b77958')}).bindPopup(text('div','移植目的地：'+d.label+'（'+r.title+'）'));destinations.addLayer(marker);bounds.push(target);
+   if(origin)routes.addLayer(L.polyline([origin,target],{color:'#b77958',weight:2,dashArray:'6 6',opacity:.7}));
+  });
+ });
+ if(bounds.length)map.fitBounds(bounds,{padding:[35,35],maxZoom:15});
+ if(!plotted){const note=L.control({position:'topright'});note.onAdd=()=>{const e=L.DomUtil.create('div','legend');e.textContent='目前條件沒有可定位的官方說明，仍可從右側清單閱讀。';return e};note.addTo(map)}
+}).catch(()=>{const note=L.control({position:'topright'});note.onAdd=()=>{const e=L.DomUtil.create('div','legend');e.textContent='案件資料載入失敗，請重新整理。';return e};note.addTo(map)});
+</script></body></html>

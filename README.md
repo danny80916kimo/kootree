@@ -17,6 +17,8 @@ python dashboard_supabase.py
 
 本機環境實測 93,045 筆行道樹及 200 筆獨立模擬通報；實際數量以各部署的 Supabase 專案與讀取權限為準。
 
+完整參考版整合已補齊地圖五圖層、官方紀錄讀取、六張連動圖表、案件與養護資料中心及目前分頁匯出，見 [完整後台與資料差異說明](docs/dashboard-reference-parity.md)。官方資料匯入 SQL 為 `supabase/seed_dashboard_official_cases.sql`；工單採獨立資料表，未提供紀錄時不生成假資料。
+
 原 app.py 的 Supabase 匯入與讀取設定請見 [串接說明](docs/supabase-setup.md)。預設仍使用本機 CSV；填妥後端環境設定並完成資料匯入後可切換至 Supabase。
 
 以 **Dash + Plotly + Pandas + pyproj** 製作的可執行 GIS 管理後台。

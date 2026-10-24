@@ -23,6 +23,9 @@ def test_confirmation_is_not_case_closure_and_invalid_dates_are_unknown():
 @pytest.fixture
 def dashboard(monkeypatch):
     import scripts.supabase_data as source
+    import scripts.care_calendar as care
+    monkeypatch.setattr(source, 'load_demo_reports', lambda: source.normalize_demo_reports([]))
+    monkeypatch.setattr(care, 'load_care_calendar', lambda: {})
     trees = normalize_trees([{'tree_id':f't{i}', 'district':'大安區', 'road':'測試路',
                              'species':'榕樹', 'latitude':25.03, 'longitude':121.5} for i in (1,2)])
     reports = normalize_reports([report('1'), report('2', kind='落枝'),
@@ -48,7 +51,7 @@ def test_counts_reports_not_trees_and_excludes_out_of_scope(dashboard):
     assert result[3] == '2'
     assert result[4] == '1500.00'  # Three reports / two trees; not three reporting trees.
     assert result[6] == '4.0'
-    assert sum(result[11].data[0].x) == 3
+    assert sum(sum(trace.x) for trace in result[11].data) == 3
     assert result[12].data[0].x[0] == 1500
 
 
@@ -188,3 +191,39 @@ def test_recreated_zero_click_cards_do_not_clear_active_selection(dashboard,monk
     current={'type':'species','species':'榕樹'}
     result=dashboard.update_drill_filter([],[],None,0,'all','all','all','all','all',10,[],'species','real',current)
     assert result is dashboard.no_update
+
+
+def test_reference_dashboard_includes_all_workspaces(dashboard):
+    from dash.development.base_component import Component
+    ids=set()
+    def visit(value):
+        if isinstance(value,Component):
+            key=getattr(value,'id',None)
+            if isinstance(key,str):ids.add(key)
+            visit(getattr(value,'children',None))
+        elif isinstance(value,(list,tuple)):
+            for child in value:visit(child)
+    visit(dashboard.app.layout)
+    assert {'map_info_tab','official_case_select','official_cases_table','official_topic','official_query','official_export','priority_chart','age_chart','operations','operations_tab','operations_table','history_chart','tree_history','open_cases_link','high_risk_count_link'}.issubset(ids)
+
+
+def test_reference_chart_drill_toggles_and_clears_consumed_events(dashboard,monkeypatch):
+    from types import SimpleNamespace
+    monkeypatch.setattr(dashboard,'ctx',SimpleNamespace(triggered_id='district_chart'))
+    basics=[[],[],None,0,'all','all','all','all','all',10,[],'species','real',{}]
+    extra=[None,None,None,None,{'points':[{'y':'大安區'}]},None]
+    selected=dashboard.update_reference_drill(*(basics+extra))
+    assert selected[0]['district']=='大安區'
+    assert selected[1:]==(None,)*5
+    basics[-1]=selected[0]
+    assert dashboard.update_reference_drill(*(basics+extra))[0]=={}
+
+
+def test_operations_history_counts_reports_and_preserves_confirmation_semantics(dashboard):
+    filters=['all','all','all','all','all',10,[],{},'real']
+    rows=dashboard.operation_rows('cases',*filters)
+    assert rows.id.tolist()==['1','2']
+    history=dashboard.render_operations('history',*filters)
+    assert sum(history[3].data[0].y)==3
+    assert len(history[0])==3
+    assert all('closed_date' not in row for row in history[0])

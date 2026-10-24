@@ -13,7 +13,7 @@ def labels(series, fallback):
     return series.fillna(fallback).astype(str).str.strip().replace('', fallback)
 
 
-def species_donut(frame):
+def species_donut(frame, species_colors=None):
     counts = labels(frame['species'], '未分類').value_counts()
     top = counts.head(10)
     chart_labels = top.index.tolist()
@@ -24,18 +24,18 @@ def species_donut(frame):
         values.append(remainder)
     chart = go.Figure()
     if values:
-        colors = PALETTE[:len(top)] + ([PALETTE[-1]] if remainder else [])
+        colors = [species_colors.get(name,PALETTE[-1]) for name in chart_labels] if species_colors else PALETTE[:len(top)] + ([PALETTE[-1]] if remainder else [])
         chart.add_trace(go.Pie(
-            labels=chart_labels, values=values, hole=.52, sort=False,
+            labels=chart_labels, values=values, hole=.60, sort=False,
             direction='clockwise', rotation=0,
             marker={'colors':colors,'line':{'color':PAPER,'width':2}},
             textinfo='percent', textposition='inside',
-            textfont={'size':12,'color':['#fffdf7' if color == PALETTE[0] else '#21372a' for color in colors]},
+            textfont={'size':12,'color':['#fffdf7' if index < 2 else '#21372a' for index,color in enumerate(colors)]},
             insidetextorientation='auto',
             hovertemplate='%{label}<br>%{value:,} 棵 · %{percent}<extra></extra>',
         ))
     chart.update_layout(
-        height=520, margin={'l':8,'r':8,'t':25,'b':20},
+        height=410, margin={'l':8,'r':8,'t':25,'b':20},
         paper_bgcolor=PAPER, plot_bgcolor=PAPER,
         font={'family':'Noto Sans TC, Arial, sans-serif','color':INK},
         uniformtext={'minsize':10,'mode':'hide'},
@@ -43,7 +43,7 @@ def species_donut(frame):
         xaxis={'visible':False}, yaxis={'visible':False},
         annotations=[
             {'text':f'{len(frame):,}','x':.5,'y':.52,'xref':'paper','yref':'paper',
-             'showarrow':False,'font':{'size':30,'color':INK}},
+             'showarrow':False,'font':{'size':23,'color':INK}},
             {'text':'篩選樹木（棵）','x':.5,'y':.40,'xref':'paper','yref':'paper',
              'showarrow':False,'font':{'size':13,'color':INK}},
         ],
@@ -72,7 +72,7 @@ def district_distribution(frame):
     ))
     maximum = float(complete.max()) if len(complete) else 0
     chart.update_layout(
-        height=520, margin={'l':74,'r':25,'t':25,'b':65}, bargap=.2,
+        height=410, margin={'l':74,'r':25,'t':25,'b':65}, bargap=.2,
         paper_bgcolor=PAPER, plot_bgcolor=PAPER,
         font={'family':'Noto Sans TC, Arial, sans-serif','color':INK},
         showlegend=False,

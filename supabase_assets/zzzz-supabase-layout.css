@@ -1,20 +1,4 @@
-.map-toolbar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; }
-.map-layer-options { display:flex; flex-wrap:wrap; gap:3px; }
-.map-layer-options input { margin-right:5px; }
-.summary-chart-panel .dash-graph { height:520px; min-width:480px; }
-#summary-charts { scroll-margin-top:var(--header-offset); }
-@media(max-width:760px) { .summary-chart-panel .dash-graph { min-width:360px; } }
-
-/* Match the reference's compact segmented map toolbar. */
-.map-toolbar { flex-wrap:nowrap; gap:12px; }
-.map-layer-options { flex:0 1 auto; min-width:0; flex-wrap:nowrap; gap:2px; align-items:stretch; }
-.map-layer-options label { position:relative; display:flex; align-items:center; justify-content:center; cursor:pointer; white-space:nowrap; }
-.map-layer-options input { position:absolute; width:1px; height:1px; margin:0; opacity:0; }
-.map-layer-options label:has(input:disabled) { opacity:.45; cursor:not-allowed; }
-.map-toolbar .map-clear-btn { width:auto; flex:0 0 auto; margin:0 0 0 auto; min-height:34px; white-space:nowrap; font-weight:600; }
-.map-panel .drill-label.muted { padding:0; margin:10px 0 14px; background:transparent; border:0; font-size:12px; }
-@media(max-width:760px) {
- .map-toolbar { flex-wrap:wrap; }
- .map-layer-options { max-width:100%; flex-wrap:wrap; }
- .map-toolbar .map-clear-btn { margin-left:auto; }
-}
+/* Data-source controls use the same typography as the reference filters. */
+.filter-block > summary { cursor:pointer; color:#45603f; font-size:12px; }
+#official_case_detail { overflow-wrap:anywhere; }
+#map-workspace .drill-label.muted { background:transparent; border:0; padding:0; }
