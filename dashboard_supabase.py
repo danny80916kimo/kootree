@@ -130,7 +130,7 @@ app.layout = html.Div([
                 metric('當月物候／養護參考','care_count','期')
             ],id='tree-overview',className='metric-grid metric-grid-wide'),
             html.Div([
-                html.Section([html.Div([html.Div('樹木分布地圖',className='panel-title'),html.Span('可點選地圖樹木標記',className='note')],className='section-heading'),html.Div([                dcc.RadioItems(id='map_mode', options=[{'label':'樹種分布','value':'species'},{'label':'養護月份參考','value':'care','disabled':not CARE_READY},{'label':'通報熱點','value':'issue'},{'label':'風險分級','value':'risk'}],value='species',className='map-layer-options'),
+                html.Section([html.Div([html.Div('樹木分布地圖',className='panel-title'),html.Span('點選樹木，認識身邊的老朋友',className='note')],className='section-heading'),html.Div([                dcc.RadioItems(id='map_mode', options=[{'label':'樹種分布','value':'species'},{'label':'養護月份提示','value':'care','disabled':not CARE_READY},{'label':'通報熱點','value':'issue'},{'label':'風險分級','value':'risk'},{'label':'移除／移植','value':'official','disabled':True,'title':'尚未串接 Supabase 移除／移植紀錄'}],value='species',className='map-layer-options'),
                 html.Button('清除圖卡篩選',id='clear_drill',className='clear-drill-btn map-clear-btn'),
 ],className='map-toolbar'),html.Div(id='drill_label',className='drill-label muted'),dcc.Graph(id='tree_map',config={'displayModeBar':True,'scrollZoom':True},style={'height':'540px'})],className='surface map-panel'),
                 html.Section([html.Div('樹木資訊',className='panel-title'),html.Div('請點選地圖標記，查看該棵樹的資料。',id='tree_details',className='tree-detail'),html.Div('當月養護觀察',className='panel-title section-gap'),html.Div(id='care_list'),html.Div('待確認通報路段',className='panel-title section-gap'),html.Div(id='priority_roads')],className='surface details-panel')
@@ -201,7 +201,7 @@ def update_drill_filter(care_clicks,road_clicks,issue_click,clear_clicks,distric
 @app.callback(Output('drill_label','children'),Output('drill_label','className'),Input('drill_filter','data'))
 def render_drill_label(drill_filter):
     if not drill_filter:
-        return '未套用圖卡篩選；可點選右側卡片或下方問題通報長條圖進行鑽取。','drill-label muted'
+        return '點選地圖查看樹木；點選圖卡或通報圖表可篩選。','drill-label muted'
     hint = '（再點同張卡片取消）' if drill_filter.get('type') in {'species','road'} else ''
     return f"目前鑽取：{drill_filter.get('label','自訂條件')}{hint}",'drill-label active'
 
