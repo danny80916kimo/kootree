@@ -82,6 +82,6 @@ def history_chart(reports):
     if dates.empty:return empty_chart('尚無可用的通報日期；未提供結案紀錄','月份')
     counts=dates.dt.strftime('%Y-%m').value_counts().sort_index()
     fig=go.Figure(go.Bar(x=counts.index,y=counts.values,name='新增通報',marker_color='#b77948'))
-    finish(fig,'通報月份',320);fig.update_yaxes(title='通報件數',dtick=1)
+    finish(fig,'通報月份',320);fig.update_xaxes(type='category');fig.update_yaxes(title='通報件數',rangemode='tozero',nticks=6)
     fig.add_annotation(text='未提供結案日期，不推估結案趨勢',xref='paper',yref='paper',x=1,y=1.12,xanchor='right',showarrow=False,font=dict(size=11))
     return fig

@@ -36,6 +36,8 @@ def test_history_keeps_report_identity_and_does_not_invent_work_or_closure():
     assert not {'closed_date','team','work_action','inspection_date'}.intersection(rows.columns)
     chart=history_chart(rows)
     assert len(chart.data)==1 and sum(chart.data[0].y)==2
+    assert chart.layout.xaxis.type=='category'
+    assert chart.layout.yaxis.dtick is None
     assert '結案日期' in chart.layout.annotations[0].text
 
 
